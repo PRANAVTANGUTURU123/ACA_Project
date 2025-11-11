@@ -1,4 +1,4 @@
-# Branch Target Buffer (BTB) Replacement Algorithm Analysis
+# Branch Target Buffer (BTB) Replacement policy Analysis
 
 This project implements and evaluates three different replacement algorithms for the Branch Target Buffer (BTB) in a processor pipeline: **Least Recently Used (LRU)**, **Random**, and **First-In-First-Out (FIFO)**. The goal is to analyze their effectiveness in handling branch targets under different workloads and branch predictor configurations.
 
