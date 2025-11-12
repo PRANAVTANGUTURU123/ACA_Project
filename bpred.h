@@ -111,7 +111,8 @@ enum bpred_class {
 enum bpred_repl_policy {
   BPredRepl_LRU = 0,   /* current default behavior (move-to-head on access) */
   BPredRepl_FIFO,      /* first-in, first-out (no move on hit; evict tail) */
-  BPredRepl_Random     /* random victim in set */
+  BPredRepl_Random,    /* random victim in set */
+  BPredRepl_Adaptive 
 };
 
 /* an entry in a BTB */
@@ -155,6 +156,7 @@ struct bpred_t {
     int assoc;			/* BTB associativity */
     struct bpred_btb_ent_t *btb_data; /* BTB addr-prediction table */
     enum bpred_repl_policy repl;     /* replacement policy for BTB */
+    unsigned int *miss_count;
   } btb;
 
   struct {
