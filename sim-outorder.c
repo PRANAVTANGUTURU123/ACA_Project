@@ -875,7 +875,7 @@ sim_reg_options(struct opt_odb_t *odb)
 	       &bugcompat_mode, /* default */FALSE, /* print */TRUE, NULL);
  
  opt_reg_string(odb, "-bpred:btb_repl",
-    "BTB replacement policy {lru|fifo|random}",
+    "BTB replacement policy {lru|fifo|random|adaptive}",
     &btb_repl, "lru", TRUE, NULL);
 
 }
