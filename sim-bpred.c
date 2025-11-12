@@ -182,7 +182,7 @@ sim_reg_options(struct opt_odb_t *odb)
 		   /* print */TRUE, /* format */NULL, /* !accrue */FALSE);
 
  opt_reg_string(odb, "-bpred:btb_repl",
-    "BTB replacement policy {lru|fifo|random}",
+    "BTB replacement policy {lru|fifo|random|adaptive}",
     &btb_repl, /* default value */ "lru",
     /* print */ TRUE, /* format */ NULL);
 
